@@ -28,8 +28,43 @@ button1.addEventListener("click", function () {
 
 
 
+/*Popup login*/
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+
+var state= false;
+function toggle() {
+  var a = document.getElementById("password");
+    if(state, a.type == "password" ){
+      document.getElementById("password").setAttribute("type","password");
+      state=false;
+      a.type = "text";
+    }
+    else {
+      document.getElementById("password").setAttribute("type","text");
+      state=true;
+      a.type = "password";
+    }
+}
+
+
+
+
+
 
 //Slideshow Buttons
+var slider = document.getElementById('slider');
+var active = document.getElementById('active');
+var line1 = document.getElementById('line1');
+var line2 = document.getElementById('line2');
+var line3 = document.getElementById('line3');
+
+
 line1.onclick = function(){
   slider.style.transform = 'translateX(0)';
   active.style.top = '0px';

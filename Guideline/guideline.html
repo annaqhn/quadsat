@@ -35,7 +35,6 @@
 
 
 
-
     <header>
       <!--Blue header start-->
       <div class="blue-header">
@@ -49,7 +48,7 @@
           <a href="https://www.linkedin.com/company/quadsat/"><span> <i class="fab fa-linkedin-in"></i> </span></a>
           <a href="https://www.facebook.com/quadsat"><span> <i class="fab fa-facebook-f"></i> </span></a>
           <a href="https://twitter.com/QuadSat"><span> <i class="fab fa-twitter"></i> </span></a>
-          <a href="#"><span> Login </span></a>
+          <button class="button-login" onclick="openForm()"><span>Login</span></button>
         </div>
       </div>
       <!--Blue header end-->
@@ -71,11 +70,39 @@
           <li><a href="#"> Information & Resources <i class="fas fa-chevron-down"></i></a></li>
           <li><a href="#"> About <i class="fas fa-chevron-down"></i></a></li>
           <li><a href="#"> Careers </a></li>
-          <button class="button" onclick="openForm()"><span> Request a demo </span></button>
+          <button class="button"><span> Request a demo </span></button>
       </nav>
     </header>
     <!--Navigation end-->
 
+
+
+
+
+    <!--Login popup start-->
+    <div class="form-popup" id="myForm">
+      <div class="left">
+      <form action="/action_page.php" class="form-container">
+        <div class="close" class="btn-cancel" onclick="closeForm()","return()"> &times;</div>
+        <img class="logolog" alt="logo" src="img/black-logo.png">
+
+        <div class="wrapper">
+          <input type="text" placeholder="Email" name="email" id="email" required>
+
+          <input type="password" placeholder="Password" id="password" required>
+        </div>
+        <button type="submit" class="btn">Login</button>
+      </form>
+      </div>
+
+
+      <div class="right">
+        <div class="login-img">
+          <img class="computer-img" alt="logo" src="img/computer.png">
+        </div>
+      </div>
+    </div>
+    <!--Login popup end-->
 
 
 
