@@ -9,10 +9,6 @@ pil.addEventListener("click", function () {
   });
 })
 
-
-
-
-
 //BUTTON ON LANDINGPAGE
 const button1 = document.querySelector("#button1");
 const buttonTarget = document.querySelector("#sec-2");
@@ -79,8 +75,6 @@ line3.onclick = function(){
   slider.style.transform = 'translateX(-66.6666%)';
   active.style.top = '160px';
 }
-
-
 
 
 
