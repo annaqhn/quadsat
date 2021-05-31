@@ -24,6 +24,7 @@ button1.addEventListener("click", function () {
 
 
 
+
 /*Popup login*/
 function openForm() {
   document.getElementById("myForm").style.display = "block";
@@ -31,21 +32,6 @@ function openForm() {
 
 function closeForm() {
   document.getElementById("myForm").style.display = "none";
-}
-
-var state= false;
-function toggle() {
-  var a = document.getElementById("password");
-    if(state, a.type == "password" ){
-      document.getElementById("password").setAttribute("type","password");
-      state=false;
-      a.type = "text";
-    }
-    else {
-      document.getElementById("password").setAttribute("type","text");
-      state=true;
-      a.type = "password";
-    }
 }
 
 
@@ -95,4 +81,4 @@ function showPanel(panelIndex,colorCode) {
     tabPanels[panelIndex].style.display="block";
     tabPanels[panelIndex].style.backgroundColor=colorCode;
 }
-showPanel(0,'#525270');
+showPanel(0,'red');
